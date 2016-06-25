@@ -16,7 +16,8 @@ type jsondoc
 
 ![1](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/hello.png)
 
-### JsonDoc hello REST
+#### ApplicationController.java
+
 ```java
   @RequestMapping(value = "/hello")
     public @ResponseBody
