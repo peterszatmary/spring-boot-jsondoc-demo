@@ -1,5 +1,5 @@
 # spring-boot-jsondoc-demo
-Spring Boot with [JsonDoc](http://jsondoc.org/) demo for your REST APIs documentation and playground.
+Spring Boot with [JsonDoc](http://jsondoc.org/) demo for your REST APIs documentation and playground. In this project is used also [Lombok](https://projectlombok.org/) for simplifing POJOs.
 
 ## How to run demo
 
