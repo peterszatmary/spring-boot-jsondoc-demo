@@ -6,8 +6,7 @@ Spring Boot with [JsonDoc](http://jsondoc.org/) demo for your REST APIs document
 ```shell
 mvn clean install
 java -jar spring-boot-jsondoc-demo-0.0.1-SNAPSHOT.jar
-go to localhost:8080/http://localhost:8080/jsondoc-ui.html
-type jsondoc
+go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
 ## How it looks like
