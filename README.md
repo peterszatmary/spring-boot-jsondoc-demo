@@ -1,25 +1,25 @@
-# spring-boot-jsondoc-demo
+# spring-boot-jsondoc-demo #
 
 [![Build Status](https://travis-ci.org/travis-examples/travis-java-ant-example.svg?branch=master)](https://travis-ci.org/peterszatmary/spring-boot-jsondoc-demo)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1059cf60bb4b4de7aed78f2ffe57ea4d)](https://www.codacy.com/app/peterszatmary/spring-boot-jsondoc-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/spring-boot-jsondoc-demo&amp;utm_campaign=Badge_Grade)
 
 Spring Boot with [JsonDoc](http://jsondoc.org/) demo for your REST APIs documentation and playground. In this project is used also [Lombok](https://projectlombok.org/) for simplifing POJOs.
 
-## How to run demo
+## How to run demo ##
 
-```shell
+```bash
 mvn clean install
 java -jar spring-boot-jsondoc-demo-0.0.1-SNAPSHOT.jar
 go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
-## How it looks like
+## How it looks like ##
 
-### JsonDoc hello REST
+### JsonDoc hello REST ###
 
 ![1](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/hello.png)
 
-#### ApplicationController.java
+#### ApplicationController.java ####
 
 ```java
   @RequestMapping(value = "/hello")
@@ -29,11 +29,11 @@ go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
     }
 ```
 
-### JsonDoc car REST
+### JsonDoc car REST ###
 
 ![2](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/jsondoc-car.png)
 
-#### ApplicationController.java
+#### ApplicationController.java ####
 
 ```java
 @RequestMapping(value = "/car")
@@ -43,36 +43,36 @@ go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
     }
 ```
 
-#### Car.java
+#### Car.java ####
 
 ```java
 @ApiObject(name="Car", description = "Car object represents cars.")
 @AllArgsConstructor
 @NoArgsConstructor
-public @Data class Car {
+@Data
+public class Car {
 
     @ApiObjectField(description = "Just simple car name")
     private String name;
 
     @ApiObjectField(description = "Car owner")
     private Owner owner;
-
 }
 ```
 
-#### Owner.java
+#### Owner.java ####
 
 ```java
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @ApiObject(name="Owner", description = "Owner of car.")
-public @Data class Owner {
+public class Owner {
     @ApiObjectField(description = "Owner name and surname.")
     private String name;
 }
 ```
 
-### JsonDoc objects
+### JsonDoc objects ###
 
 ![3](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/jsondocOwner.png)
-
