@@ -19,7 +19,7 @@ go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 
 ![1](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/hello.png)
 
-#### ApplicationController.java ####
+#### ApplicationController.java hello endpoint ####
 
 ```java
   @RequestMapping(value = "/hello")
@@ -33,7 +33,7 @@ go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 
 ![2](https://github.com/peterszatmary/just-like-that/blob/master/imgs/spring-boot-jsondoc-demo/jsondoc-car.png)
 
-#### ApplicationController.java ####
+#### ApplicationController.java car endpoint ####
 
 ```java
 @RequestMapping(value = "/car")
