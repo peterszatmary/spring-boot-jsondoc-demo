@@ -13,6 +13,24 @@ java -jar spring-boot-jsondoc-demo-0.0.1-SNAPSHOT.jar
 go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
+## How to run demo with docker from project ##
+```bash
+cd bin
+sh build.sh
+sh run.sh
+```
+
+## How to run demo with docker (if you have Windows) from project ##
+```bash
+docker build -t spring-boot-jsondoc-demo:latest .
+docker run -d -p 8080:8080 -ti spring-boot-jsondoc-demo:latest
+```
+
+## How to run demo with docker (if you have Windows) from Quay ##
+```bash
+TODO
+```
+
 ## How it looks like ##
 
 ### JsonDoc hello REST ###
