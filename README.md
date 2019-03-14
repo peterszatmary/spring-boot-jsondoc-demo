@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/travis-examples/travis-java-ant-example.svg?branch=master)](https://travis-ci.org/peterszatmary/spring-boot-jsondoc-demo)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1059cf60bb4b4de7aed78f2ffe57ea4d)](https://www.codacy.com/app/peterszatmary/spring-boot-jsondoc-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/spring-boot-jsondoc-demo&amp;utm_campaign=Badge_Grade)
+[![Docker Repository on Quay](https://quay.io/repository/peterszatmary/spring-boot-jsondoc-demo/status "Docker Repository on Quay")](https://quay.io/repository/peterszatmary/spring-boot-jsondoc-demo)
 
 Spring Boot with [JsonDoc](http://jsondoc.org/) demo for your REST APIs documentation and playground. In this project is used also [Lombok](https://projectlombok.org/) for simplifing POJOs.
 
@@ -28,7 +29,8 @@ docker run -d -p 8080:8080 -ti spring-boot-jsondoc-demo:latest
 
 ## How to run demo with docker (if you have Windows) from Quay ##
 ```bash
-TODO
+docker pull quay.io/peterszatmary/spring-boot-jsondoc-demo
+docker run -d -p 8080:8080 -ti spring-boot-jsondoc-demo:latest
 ```
 
 ## How it looks like ##
