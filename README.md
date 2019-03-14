@@ -19,18 +19,21 @@ go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 cd bin
 sh build.sh
 sh run.sh
+go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
 ## How to run demo with docker (if you have Windows) from project ##
 ```bash
 docker build -t spring-boot-jsondoc-demo:latest .
 docker run -d -p 8080:8080 -ti spring-boot-jsondoc-demo:latest
+go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
 ## How to run demo with docker (if you have Windows) from Quay ##
 ```bash
 docker pull quay.io/peterszatmary/spring-boot-jsondoc-demo
 docker run -d -p 8080:8080 -ti spring-boot-jsondoc-demo:latest
+go to http://localhost:8080/jsondoc-ui.html?url=jsondoc
 ```
 
 ## How it looks like ##
